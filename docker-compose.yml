@@ -40,7 +40,9 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - namenode
-    entrypoint: ["/bin/bash", "-c", "/scripts/load_hdfs.sh"]
+    #entrypoint: ["/bin/bash", "-c", "/scripts/load_hdfs.sh"]
+    entrypoint: ["/bin/sh", "-c", "tr -d '\r' < /scripts/load_hdfs.sh | /bin/bash"]
+
     volumes:
       - ./scripts:/scripts
       - ./data:/data
