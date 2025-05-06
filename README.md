@@ -52,6 +52,12 @@ chmod +x scripts/*.sh
 
 Esse passo é obrigatório para garantir a execução correta dos scripts dentro do container `init-hdfs`.
 
+No windows, caso use bash e aconteça o erro “bad interpreter: /bin/bash^M” acontece porque o script foi salvo com fim de linha no estilo Windows (CRLF), e o Bash interpreta o ^M como parte do caminho do interpretador. Para resolver:
+
+```bash
+dos2unix scripts/load_hdfs.sh
+```
+
 ---
 
 ### 3. Atenção ao Sistema Operacional
