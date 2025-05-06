@@ -13,6 +13,11 @@ Este projeto foi desenvolvido como parte da disciplina **Big Data**, do curso de
 
 ---
 
+## Vídeo do Projeto
+[![Vídeo do Projeto](https://img.youtube.com/vi/hhU5_XNmQcg/0.jpg)](https://www.youtube.com/watch?v=hhU5_XNmQcg)
+
+---
+
 ## Tecnologias Utilizadas
 
 - Python 3 + Selenium (web scraping)
